@@ -11,6 +11,7 @@ public static class cb
         v110,
         v120,
         v140,
+        v141
     }
 
     enum Machine
@@ -65,6 +66,8 @@ public static class cb
                 return "C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\VC\\vcvarsall.bat";
             case VCVersion.v140:
                 return "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\vcvarsall.bat";
+            case VCVersion.v141:
+                return "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat" ;
             default:
                 throw new NotImplementedException();
         }
@@ -960,12 +963,20 @@ public static class cb
 				new win_target(VCVersion.v140, Flavor.plain, Machine.x86),
 				new win_target(VCVersion.v140, Flavor.plain, Machine.x64),
 				new win_target(VCVersion.v140, Flavor.plain, Machine.arm),
-				new win_target(VCVersion.v140, Flavor.plain, Machine.arm64),
 
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.x86),
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.x64),
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.arm),
-				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.arm64),
+
+				new win_target(VCVersion.v141, Flavor.plain, Machine.x86),
+				new win_target(VCVersion.v141, Flavor.plain, Machine.x64),
+				new win_target(VCVersion.v141, Flavor.plain, Machine.arm),
+				new win_target(VCVersion.v141, Flavor.plain, Machine.arm64),
+
+				new win_target(VCVersion.v141, Flavor.appcontainer, Machine.x86),
+				new win_target(VCVersion.v141, Flavor.appcontainer, Machine.x64),
+				new win_target(VCVersion.v141, Flavor.appcontainer, Machine.arm),
+				new win_target(VCVersion.v141, Flavor.appcontainer, Machine.arm64),
 
 			};
 
@@ -1605,12 +1616,20 @@ public static class cb
 				new win_target(VCVersion.v140, Flavor.plain, Machine.x86),
 				new win_target(VCVersion.v140, Flavor.plain, Machine.x64),
 				new win_target(VCVersion.v140, Flavor.plain, Machine.arm),
-				new win_target(VCVersion.v140, Flavor.plain, Machine.arm64),
 
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.x86),
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.x64),
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.arm),
-				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.arm64),
+
+				new win_target(VCVersion.v141, Flavor.plain, Machine.x86),
+				new win_target(VCVersion.v141, Flavor.plain, Machine.x64),
+				new win_target(VCVersion.v141, Flavor.plain, Machine.arm),
+				new win_target(VCVersion.v141, Flavor.plain, Machine.arm64),
+
+				new win_target(VCVersion.v141, Flavor.appcontainer, Machine.x86),
+				new win_target(VCVersion.v141, Flavor.appcontainer, Machine.x64),
+				new win_target(VCVersion.v141, Flavor.appcontainer, Machine.arm),
+				new win_target(VCVersion.v141, Flavor.appcontainer, Machine.arm64),
 
 			};
 
