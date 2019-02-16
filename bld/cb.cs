@@ -18,6 +18,7 @@ public static class cb
         x86,
         x64,
         arm,
+        arm64,
     }
 
     enum Flavor
@@ -79,6 +80,8 @@ public static class cb
                 return "x86_amd64";
             case Machine.arm:
                 return "x86_arm";
+            case Machine.arm64:
+                return "x86_arm64";
             default:
                 throw new NotImplementedException();
         }
@@ -957,10 +960,12 @@ public static class cb
 				new win_target(VCVersion.v140, Flavor.plain, Machine.x86),
 				new win_target(VCVersion.v140, Flavor.plain, Machine.x64),
 				new win_target(VCVersion.v140, Flavor.plain, Machine.arm),
+				new win_target(VCVersion.v140, Flavor.plain, Machine.arm64),
 
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.x86),
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.x64),
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.arm),
+				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.arm64),
 
 			};
 
@@ -1600,10 +1605,12 @@ public static class cb
 				new win_target(VCVersion.v140, Flavor.plain, Machine.x86),
 				new win_target(VCVersion.v140, Flavor.plain, Machine.x64),
 				new win_target(VCVersion.v140, Flavor.plain, Machine.arm),
+				new win_target(VCVersion.v140, Flavor.plain, Machine.arm64),
 
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.x86),
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.x64),
 				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.arm),
+				new win_target(VCVersion.v140, Flavor.appcontainer, Machine.arm64),
 
 			};
 
